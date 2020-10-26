@@ -164,6 +164,116 @@
             }
         },
         {
+            "requestBody": true,
+            "responseBody": true,
+            "name": "Update Patients",
+            "description": "Update a patient record in the client registry",
+            "urlPattern": "^/Patient/.*$",
+            "matchContentRegex": null,
+            "matchContentXpath": null,
+            "matchContentValue": null,
+            "matchContentJson": null,
+            "pollingSchedule": null,
+            "tcpHost": null,
+            "tcpPort": null,
+            "autoRetryPeriodMinutes": 60,
+            "autoRetryEnabled": false,
+            "rewriteUrlsConfig": [],
+            "addAutoRewriteRules": true,
+            "rewriteUrls": false,
+            "status": "enabled",
+            "alerts": [],
+            "txRerunAcl": [],
+            "txViewFullAcl": [],
+            "txViewAcl": [],
+            "properties": [],
+            "matchContentTypes": [],
+            "routes": [
+                {
+                    "type": "http",
+                    "status": "enabled",
+                    "forwardAuthHeader": false,
+                    "name": "Update Patient",
+                    "secured": false,
+                    "host": "18.158.139.243",
+                    "port": 8081,
+                    "path": "",
+                    "pathTransform": "s/Patient/hapi-fhir-jpaserver\/fhir\/Patient/g",
+                    "primary": true,
+                    "username": "",
+                    "password": ""
+                }
+            ],
+            "authType": "private",
+            "whitelist": [],
+            "allow": [
+                "openmrs"
+            ],
+            "type": "http",
+            "methods": [
+                "POST"
+            ],
+            "updatedBy": {
+                "id": "5d5d94607329d74724442f67",
+                "name": "Super User"
+            }
+        },
+        {
+            "requestBody": true,
+            "responseBody": true,
+            "name": "Get Patients",
+            "description": "Get a patient record from the client registry",
+            "urlPattern": "^/fhir/$",
+            "matchContentRegex": null,
+            "matchContentXpath": null,
+            "matchContentValue": null,
+            "matchContentJson": null,
+            "pollingSchedule": null,
+            "tcpHost": null,
+            "tcpPort": null,
+            "autoRetryPeriodMinutes": 60,
+            "autoRetryEnabled": false,
+            "rewriteUrlsConfig": [],
+            "addAutoRewriteRules": true,
+            "rewriteUrls": false,
+            "status": "enabled",
+            "alerts": [],
+            "txRerunAcl": [],
+            "txViewFullAcl": [],
+            "txViewAcl": [],
+            "properties": [],
+            "matchContentTypes": [],
+            "routes": [
+                {
+                    "type": "http",
+                    "status": "enabled",
+                    "forwardAuthHeader": false,
+                    "name": "Get Patients",
+                    "secured": false,
+                    "host": "18.158.139.243",
+                    "port": 3000,
+                    "path": "",
+                    "pathTransform": "",
+                    "primary": true,
+                    "username": "",
+                    "password": ""
+                }
+            ],
+            "authType": "private",
+            "whitelist": [],
+            "allow": [
+                "openmrs"
+            ],
+            "type": "http",
+            "methods": [
+                "POST"
+            ],
+            "updatedBy": {
+                "id": "5d5d94607329d74724442f67",
+                "name": "Super User"
+            }
+        },
+        {
             "methods": [
                 "GET"
             ],
